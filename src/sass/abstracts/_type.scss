@@ -1,0 +1,31 @@
+$type-scale: (
+  small: (
+    // Minor third
+    300: 1rem,
+    400: 1.125rem,
+    500: 1.563rem,
+    600: 1.953rem,
+    700: 2.441rem,
+    800: 3.052rem,
+  ),
+  big: (
+    // Augmented fourth
+    300: 1rem,
+    400: 1.25rem,
+    500: 2rem,
+    600: 2.827rem,
+    700: 3rem,
+    800: 5.653rem,
+  ),
+);
+
+$fluid-type-scale: (
+  200: clamp(0.72rem, calc(0.8rem + -0.11vw), 0.78rem),
+  300: clamp(0.9rem, calc(0.95rem + -0.07vw), 0.94rem),
+  400: clamp(1.13rem, calc(1.13rem + 0vw), 1.13rem),
+  500: clamp(1.35rem, calc(1.33rem + 0.1vw), 1.41rem),
+  600: clamp(1.62rem, calc(1.57rem + 0.24vw), 1.76rem),
+  700: clamp(1.94rem, calc(1.86rem + 0.44vw), 2.2rem),
+  800: clamp(2.33rem, calc(2.19rem + 0.72vw), 2.75rem),
+  900: clamp(2.8rem, calc(2.58rem + 1.1vw), 3.43rem),
+);

@@ -1,0 +1,40 @@
+@use "../abstracts" as *;
+
+.hero {
+  isolation: isolate;
+
+  &-img > :last-child {
+    position: absolute;
+    inset: 0;
+    top: -2rem;
+    z-index: -1;
+  }
+
+  &-text {
+    --flow-spacer: 2rem;
+
+    text-align: center;
+  }
+
+  @include mq(medium) {
+    & {
+      margin-top: 3rem;
+      grid-auto-rows: 3rem;
+    }
+
+    &-text {
+      grid-row: 2 / span 8;
+      grid-column: 2/9;
+      z-index: 1;
+      text-align: left;
+    }
+
+    &-img {
+      position: relative;
+      max-width: 32rem;
+      justify-self: end;
+      grid-row: 1 / span 6;
+      grid-column: 9/-1;
+    }
+  }
+}

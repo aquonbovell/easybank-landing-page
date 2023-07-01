@@ -1,0 +1,12 @@
+@use "../abstracts" as *;
+
+.latest-articles h2 {
+  padding-block: 2rem;
+  text-align: center;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1rem;
+}

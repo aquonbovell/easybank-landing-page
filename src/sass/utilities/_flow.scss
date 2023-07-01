@@ -1,0 +1,15 @@
+.flow > * + * {
+  margin-top: var(--flow-spacer, 1rem);
+}
+
+.flow-padding > * + * {
+  padding-block: var(--flow-spacer, 1rem);
+}
+
+.flow-padding > *:first-child {
+  padding-bottom: var(--flow-spacer, 1rem);
+}
+
+.flow-padding > *:last-child {
+  padding-bottom: var(--flow-spacer, 1rem);
+}
