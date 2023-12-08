@@ -9,3 +9,4 @@ navToggle.addEventListener("click", () => {
   primaryNav.toggleAttribute("data-visible");
   main.toggleAttribute("data-overlay");
 });
+
